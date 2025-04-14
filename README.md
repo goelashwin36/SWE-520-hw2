@@ -18,3 +18,14 @@ This is a simple expense tracker application which lets users add daily transact
 - Java (Swing GUI)
 - MVC Pattern
 - JUnit (For testing)
+
+## Build & Testing
+
+1. With Apache Ant installed, run ```ant``` in the root directory containing the build.xml build file
+
+2. Run ```ant compile``` to generate the class files
+
+3. Run ```ant test``` to compile all unit tests and run them
+
+## How to run (from Terminal):
+After building the project, run: ```java -cp bin ExpenseTrackerApp```
