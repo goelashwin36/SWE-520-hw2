@@ -1,6 +1,7 @@
 package model;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CategoryFilter implements TransactionFilter {
     @Override
@@ -9,10 +10,10 @@ public class CategoryFilter implements TransactionFilter {
             if (category == null || category.isEmpty()) {
                 return transactions;
             }
-            
+
             return transactions.stream()
                     .filter(transaction -> transaction.getCategory().equalsIgnoreCase(category))
-                    .toList();
+                    .collect(Collectors.toList());
 
         } catch (NumberFormatException e) {
             return List.of();

@@ -12,3 +12,5 @@ application.properties
 # Ignore dependency caches
 node_modules/
 .mvn
+
+*.DS_STORE
